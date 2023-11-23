@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+    <div class="caja">
+    <span class="bordedelinea"></span>   
+    <form action="ingresarDatos.php" method="post">
+        <h1>Registro de usuarios</h1>
+        <div class="cajainput">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+    </div>
+        <br><br>
+        <div class="cajainput">
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido">
+    </div>
+        <br><br>
+        <div class="cajainput">
+        <label for="telefono">Telefono</label>
+        <input type="text" name="telefono" id="telefono">
+    </div>
+        <br><br>
+        <div class="cajainput">
+        <label for="correo">Correo</label>
+        <input type="text" name="correo" id="correo">
+    </div>
+        <br><br>
+        <input type="submit" value="enviar">
+    </div>
+    </form>
+</body>
+<body class="Glas">
+    <div class="boxxx">
+        <div class="eltexto gb"></div>
+        <div class="cardd">       
+    </div>
+    <div class="eltexto yup">
+        <h2>BIENVENIDOOO!!</h2>
+    </div> 
+    <div class="eltexto content">
+        <h5 >Estas en la seccion de registro!! Aqui podras ingresar tus datos para generar tu usuario, Porfavor llena los campos sitiados
+            a la isquierda, al momento que tengas todas las casillas llenas dale al boton de enviar y LISTO! :D ya haces parte de la familia.
+            <br><br>
+            recuerda revisar tu correo eletronico se te enviaran los datos de inicio de seccion para que puedas crear tu usuario y contraseña
+
+        </h5>
+    </div>       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".boxxx"), {
+		max: 10,
+		speed: 400
+	});
+    </script>
+</body>
+</html>
