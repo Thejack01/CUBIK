@@ -1,0 +1,32 @@
+<?php
+
+$servername = "localhost";
+$username = "tu_usuario";
+$password = "tu_contraseña";
+$database = "CUBIK"; 
+
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+
+$nombre = $_POST['nombre'];
+$contrasena = $_POST['contrasena']; 
+$correo = $_POST['correo'];
+
+
+$sql = "INSERT INTO usuarios (nombre, contrasena, correo) VALUES ('$nombre', '$contrasena', '$correo')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Registro exitoso";
+} else {
+    echo "Error al registrar usuario: " . $conn->error;
+}
+
+
+$conn->close();
+?>
